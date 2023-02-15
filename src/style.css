@@ -24,3 +24,167 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
+#connect {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+#message {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  height: 20px;
+}
+
+#toolbar {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #222222aa;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  padding: 5px;
+  border-radius: 100px;
+  display: none;
+}
+
+#toolbar .btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 1px;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+#toolbar .btn:hover {
+  opacity: 0.5;
+}
+
+#toolbar .btn.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #fff;
+  user-select: none;
+  opacity: 0.2;
+}
+
+#chatbox {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+  z-index: 1;
+  width: 150px;
+  height: 200px;
+  background-color: #222222aa;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 10px;
+  overflow-y: scroll;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+#chatbox .server {
+  color: #f80;
+}
+
+#chatbox:hover {
+  opacity: 0.9;
+}
+
+#toolbar .btn#build {
+  background: url('/build.png') no-repeat center center;
+  background-size: 20px 20px;
+}
+
+#toolbar .btn#remove {
+  background: url('/remove.png') no-repeat center center;
+  background-size: 20px 20px;
+}
+
+#divider {
+  width: 1px;
+  height: 40px;
+  background-color: #888;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+#toolbar .color-palette {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 100px;
+  user-select: none;
+}
+
+#toolbar .color-palette .btn {
+  width: 5px;
+  height: 5px;
+  border-radius: 100px;
+  padding: 5px;
+  margin: 0 1px;
+  position: relative
+}
+
+#toolbar .color-palette .btn.active::after {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  border-radius: 100px;
+  background-color: inherit;
+  opacity: 0.5;
+}
+
+#toolbar .color-palette .btn#red {
+  background-color: #f00;
+}
+
+#toolbar .color-palette .btn#orange {
+  background-color: #f80;
+}
+
+#toolbar .color-palette .btn#yellow {
+  background-color: #ff0;
+}
+
+#toolbar .color-palette .btn#green {
+  background-color: #0f0;
+}
+
+#toolbar .color-palette .btn#blue {
+  background-color: #00f;
+}
+
+#toolbar .color-palette .btn#purple {
+  background-color: #f0f;
+}
+
+#toolbar .color-palette .btn#white {
+  background-color: #fff;
+}
+
+#toolbar .color-palette .btn#gray {
+  background-color: #888;
+}

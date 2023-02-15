@@ -7,6 +7,25 @@
   </head>
   <body>
     <div id="app">
+      <button id="connect">Connect</button>
+      <div id="toolbar">
+        <div class="btn active" id="build"></div>
+        <div class="btn" id="remove"></div>
+        <div id="divider"></div>
+        <div class="color-palette">
+          <div class="btn block active" id="white"></div>
+          <div class="btn block" id="red"></div>
+          <div class="btn block" id="orange"></div>
+          <div class="btn block" id="yellow"></div>
+          <br />
+          <div class="btn block" id="green"></div>
+          <div class="btn block" id="blue"></div>
+          <div class="btn block" id="purple"></div>
+          <div class="btn block" id="gray"></div>
+        </div>
+      </div>
+      <div id="chatbox"></div>
+      <input id="message" type="text" placeholder="Send message" />
       <canvas id="main"></canvas>
     </div>
     <script type="module" src="/src/main.ts"></script>
