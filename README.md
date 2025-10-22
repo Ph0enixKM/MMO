@@ -15,6 +15,13 @@ This project consists of two main parts:
 
 ### Installation
 
+#### Quick Setup (Linux/Mac)
+```bash
+./setup.sh
+```
+
+#### Manual Setup
+
 1. Clone the repository and install dependencies:
 ```bash
 npm install
