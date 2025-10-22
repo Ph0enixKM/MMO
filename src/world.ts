@@ -3,7 +3,7 @@ import Block from './block';
 
 export const GRID_SIZE = 20;
 export const MAP_SIZE = 2000;
-const URL = 'wss://08ohe3ecjh.execute-api.eu-central-1.amazonaws.com/production/'
+const URL = 'ws://localhost:3000'
 type BuildMode = 'build' | 'remove';
 
 export default class World {
